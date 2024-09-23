@@ -1,5 +1,12 @@
 # React + TypeScript + Vite
 
+## refs
+
+- [2024年】React環境構築を1から丁寧に初めてみよう【viteを利用】](https://www.youtube.com/watch?v=2E6iPVsGfPI&list=PLT5klp7W4r8QsTk3YZgqImARa11G0Vcgl&index=36)
+- https://github.com/Shin-sibainu/react-setup-for-yt-2024
+
+---
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
@@ -22,7 +29,7 @@ export default tseslint.config({
       tsconfigRootDir: import.meta.dirname,
     },
   },
-})
+});
 ```
 
 - Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
@@ -31,7 +38,7 @@ export default tseslint.config({
 
 ```js
 // eslint.config.js
-import react from 'eslint-plugin-react'
+import react from 'eslint-plugin-react';
 
 export default tseslint.config({
   // Set the react version
@@ -46,5 +53,5 @@ export default tseslint.config({
     ...react.configs.recommended.rules,
     ...react.configs['jsx-runtime'].rules,
   },
-})
+});
 ```
